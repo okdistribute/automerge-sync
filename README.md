@@ -1,9 +1,9 @@
-# automerge-discovery
+# automerge-peers
 
 Manage multiple peers per document and sync over any connection
 
 ```
-npm i automerge-discovery
+npm i automerge-peers
 ```
 
 ## Usage

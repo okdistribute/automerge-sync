@@ -15,7 +15,7 @@ enum MESSAGE_TYPES {
   DONE = '0',
 }
 
-export default class AutomergeDiscovery<T> extends EventEmitter {
+export default class AutomergePeers<T> extends EventEmitter {
   public doc: Automerge.Doc<T>;
   private peers: Map<PeerId, Automerge.SyncState>;
   private log: debug;
