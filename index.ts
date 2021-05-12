@@ -1,4 +1,4 @@
-import Automerge from 'automerge';
+import * as Automerge from 'automerge';
 import debug from 'debug';
 import { EventEmitter } from 'events';
 
@@ -36,7 +36,11 @@ export default class AutomergeDiscovery<T> extends EventEmitter {
   }
 
   idle() {
-    return this.peers.filter((p) => !p.idle).length === 0
+    for (let peerId in this.peers) {
+      let p = this.peers[peerId];
+      if (!p.idle) return false;
+    }
+    return true;
   }
 
   addPeer(id: string, send) {
