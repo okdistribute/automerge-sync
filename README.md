@@ -24,7 +24,7 @@ manager.on('sync', (peerId) => {
 
 For example, using this with Websockets:
 
-```
+```js
 let socket = getWebsocketConnectionForDocument(doc)
 
 // Messages are Uint8arrays
