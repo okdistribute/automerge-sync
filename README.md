@@ -15,6 +15,10 @@ let doc = Automerge.init()
 
 let manager = new AutomergeDiscovery(doc);
 
+manager.on('patch', (patch) => {
+  // Do something with the patch.
+})
+
 manager.on('sync', (peerId) => {
   console.log('Up to date with peer ', peerId)
 })
