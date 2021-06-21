@@ -3,7 +3,7 @@
 Manage multiple peers per document and sync over any connection
 
 ```
-npm i automerge-peers
+npm i automerge-sync
 ```
 
 ## Usage
