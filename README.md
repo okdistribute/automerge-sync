@@ -1,4 +1,4 @@
-# automerge-peers
+# automerge-sync
 
 Manage multiple peers per document and sync over any connection
 
@@ -9,7 +9,7 @@ npm i automerge-peers
 ## Usage
 
 ```js
-import AutomergeDiscovery from 'automerge-discovery';
+import AutomergeDiscovery from 'automerge-sync';
 
 let doc = Automerge.init()
 
