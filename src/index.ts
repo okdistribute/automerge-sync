@@ -220,12 +220,9 @@ export class MultipleDocuments {
 
   onPeerDisconnect(docId: DocumentId, peerId: string) {
     let doc = this._syncer(docId);
-    console.log('got doc', doc, this._syncers)
     if (!doc) return;
     let peer = doc.getPeer(peerId);
-    console.log ('got peer')
     if (!peer) return;
-    console.log('removing peer')
     doc.removePeer(peerId);
   }
 
