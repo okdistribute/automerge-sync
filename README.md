@@ -9,11 +9,11 @@ npm i automerge-sync
 ## Usage
 
 ```js
-import AutomergeDiscovery from 'automerge-sync';
+import AutomergeSync from 'automerge-sync';
 
 let doc = Automerge.init()
 
-let manager = new AutomergeDiscovery(doc);
+let manager = new AutomergeSync(doc);
 
 manager.on('patch', (patch) => {
   // Do something with the patch.
